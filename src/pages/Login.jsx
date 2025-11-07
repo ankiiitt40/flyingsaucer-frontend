@@ -41,14 +41,11 @@ export default function Login() {
     setLoading(true);
 
     try {
-      const res = await fetch(
-        "https://flyingsaucer-backend.onrender.com/api/auth/login",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
-        }
-      );
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
 
       const data = await res.json();
       if (!res.ok) throw new Error(data.message || "Invalid credentials");
