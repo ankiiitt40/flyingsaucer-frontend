@@ -8,7 +8,7 @@ import Register from "./pages/Register";
 import { useEffect, useState } from "react";
 import Aurora from "./components/Aurora";
 import About from "./pages/About";
-import WhatsNew from "./pages/WhatsNew"; 
+import WhatsNew from "./pages/Whatsnew"; 
 import ScrollToTop from "./components/ScrollTop";
 import Contact from "./pages/Contact";
 import MyBooking from "./pages/MyBooking";
